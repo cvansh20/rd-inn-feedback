@@ -76,6 +76,26 @@ font-size:12px;
 color:#aaa;
 }
 
+/* Pulse Animation for Review Button */
+.pulse{
+animation: pulseAnim 1.6s infinite;
+}
+
+@keyframes pulseAnim{
+0%{
+transform: scale(1);
+box-shadow: 0 0 0 0 rgba(52,168,83,0.7);
+}
+70%{
+transform: scale(1.05);
+box-shadow: 0 0 0 12px rgba(52,168,83,0);
+}
+100%{
+transform: scale(1);
+box-shadow: 0 0 0 0 rgba(52,168,83,0);
+}
+}
+
 /* Floating WhatsApp */
 
 .whatsapp-float{
@@ -117,7 +137,7 @@ target="_blank">
 <p>Thank you for staying with us ❤️  
 Your feedback helps us serve you better.</p>
 
-<a class="btn google" href="https://g.page/r/CWobFmjjOAQuEBE/review" target="_blank">
+<a class="btn google pulse" href="https://g.page/r/CWobFmjjOAQuEBE/review" target="_blank">
 ⭐ Give Google Review
 </a>
 
